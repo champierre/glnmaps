@@ -8,8 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.26.1
       - name: build binaries
-        run: sh cross_compile.sh
+        run: |
+          mkdir binaries
+          sh cross_compile.sh
       - name: Deploy generated files
         run: |
           git checkout --orphan gh-pages
