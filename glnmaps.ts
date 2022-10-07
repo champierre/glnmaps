@@ -10,10 +10,8 @@ const html = index.replace("{{geojson}}", geojson);
 
 async function csv2geojson(_csvPath: string) {
   const f = await Deno.open(_csvPath);
-  let geojson;
-  geojson = '{"type": "FeatureCollection","features": [{';
 
-  let features = [];
+  const features = [];
   for await (const row of readCSVObjects(f)) {
     const lat = Number(row["緯度"] || row["緯度（10進法）"]);
     const lng = Number(row["経度"] || row["経度（10進法）"]);
@@ -39,7 +37,7 @@ async function csv2geojson(_csvPath: string) {
   return JSON.stringify(json);
 }
 
-async function handler(req: Request): Promise<Response> {
+function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
 
   if (url.pathname == "/") {
