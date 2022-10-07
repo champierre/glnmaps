@@ -1,0 +1,23 @@
+{
+  "fileVersion": "1.1",
+  "contents": [
+    {
+      "name": "東京都 調布市 公共施設 データセット_132080/g1-000305.csv",
+      "url": "https://ckan-bucket-governmentcloud.s3.ap-northeast-1.amazonaws.com/132080/g1-000305.csv",
+      "catalogUrl": null,
+      "catalogResourceId": null,
+      "postProcesses": [],
+      "headers": {}
+    },
+    {
+      "name": "132080_東京都_調布市_避難施設_広域避難場所",
+      "url": "https://www.geospatial.jp/ckan/dataset/e8e894e0-a18b-46cd-96e8-ad97ca976a15/resource/a0669bcd-063c-4074-8f8a-e4459227961e/download/2.xlsx",
+      "catalogUrl": null,
+      "catalogResourceId": null,
+      "postProcesses": [
+        "xlsx-to-csv"
+      ],
+      "headers": {}
+    }
+  ]
+}
