@@ -1,14 +1,15 @@
-import { readCSVRows, readCSVObjects } from "https://deno.land/x/csv/mod.ts";
+import { readCSVObjects } from "https://deno.land/x/csv/mod.ts";
+import { serve } from "https://deno.land/std@0.159.0/http/server.ts";
 
-const server = Deno.listen({ port: 3000 });
+serve(handler, { port: 3000 });
+console.log('glnmaps is running. Access it at: http://localhost:3000/');
 const csvPath = Deno.args[0];
+const geojson = await csv2geojson(csvPath);
+const index = await Deno.readTextFile("./index.html");
+const html = index.replace("{{geojson}}", geojson);
 
-for await (const conn of server) {
-  serveHttp(conn);
-}
-
-async function csv2geojson(csvPath: string) {
-  const f = await Deno.open(csvPath);
+async function csv2geojson(_csvPath: string) {
+  const f = await Deno.open(_csvPath);
   let geojson;
   geojson = '{"type": "FeatureCollection","features": [{';
 
@@ -38,26 +39,18 @@ async function csv2geojson(csvPath: string) {
   return JSON.stringify(json);
 }
 
-async function serveHttp(conn: Deno.Conn) {
-  const httpConn = Deno.serveHttp(conn);
+async function handler(req: Request): Promise<Response> {
+  const url = new URL(req.url);
 
-  for await (const requestEvent of httpConn) {
-    let body;
-    const url = new URL(requestEvent.request.url);
-    const path = url.pathname;
-
-    if (path === "/") {
-      body = await Deno.readFileSync("./index.html");
-    }
-    
-    if (path === "/geojson") {
-      body = await csv2geojson(csvPath);
-    }
-
-    requestEvent.respondWith(
-      new Response(body, {
-        status: 200,
-      }),
-    );
+  if (url.pathname == "/") {
+    return new Response(html, {
+      headers: { "content-type": "text/html" },
+    });
+  } else if (url.pathname == "/download") {
+    return new Response(html, {
+      headers: { "content-type": "text/plain" },
+    });
+  } else {
+    return new Response("Not Found", { status: 404 });
   }
 }

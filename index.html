@@ -20,9 +20,13 @@
     </style>  
   </head>
   <body>
+    <p><a href="/download" download="index.html">ソースをダウンロード</a></p>
+    <script id="geojson" type="application/json">
+      {{geojson}}
+    </script>
     <div
       class="geolonia"
-      data-geojson="/geojson"
+      data-geojson="#geojson"
     ></div>
 
     <script
