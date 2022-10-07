@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: build binaries
+        run: sh cross_compile.sh
       - name: Deploy generated files
         run: |
           git checkout --orphan gh-pages
