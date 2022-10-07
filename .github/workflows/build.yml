@@ -1,0 +1,22 @@
+name: Deploy binaries
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy generated files
+        run: |
+          git checkout --orphan gh-pages
+          mkdir docs
+          mv binaries docs/
+          mv README.md docs/
+          git rm -rf . > /dev/null 2>&1
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add docs > /dev/null 2>&1
+          git commit -m "Deploy" > /dev/null 2>&1
+          git push --force origin gh-pages

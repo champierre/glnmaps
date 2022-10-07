@@ -7,7 +7,7 @@ for await (const conn of server) {
   serveHttp(conn);
 }
 
-async function csv2geojson(csvPath) {
+async function csv2geojson(csvPath: string) {
   const f = await Deno.open(csvPath);
   let geojson;
   geojson = '{"type": "FeatureCollection","features": [{';
