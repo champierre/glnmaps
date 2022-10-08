@@ -23,6 +23,7 @@ jobs:
           mv README.md docs/
           mv _config.yml docs/
           mv sample.csv docs/
+          mv dim.json docs/
           git rm -rf . > /dev/null 2>&1
           git config user.name "$GITHUB_ACTOR"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"

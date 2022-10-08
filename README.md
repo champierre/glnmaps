@@ -14,6 +14,16 @@ glnmaps(GeoLoNia Light and Neat Maps)は、各自治体が公開しているCSV�
 
 [東京都 調布市 公共施設 データセット](https://champierre.github.io/sample.csv)
 
+※ オープンデータを管理するには[dim](https://github.com/c-3lab/dim)を使うと便利です。サンプルの[dim.json](https://champierre.github.io/dim.json)をダウンロードして、
+
+```
+dim install
+```
+
+と実行すれば上記サンプルを含めたデータセットを簡単に用意できます。
+
+参考: [そろそろオープンデータを無秩序に管理するのは卒業したいので📦データを管理するパッケージマネージャを開発した【ツール開発】](https://qiita.com/ryo-ma/items/0505f7790ad2b12bcdc2)
+
 ### 2. glnmapsを使って地図に表示
 
 ```
@@ -32,28 +42,28 @@ glnmaps is running. Access it at: http://localhost:3000/
 
 ### 1. glnmapsのバイナリをダウンロード
 
-[aarch64-apple-darwin](https://champierre.github.io/binaries/aarch64-apple-darwin-glnmaps)
+[aarch64-apple-darwin](https://champierre.github.io/glnmaps/binaries/aarch64-apple-darwin-glnmaps)
 
 ```
-curl -L https://champierre.github.io/binaries/aarch64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
+curl -L https://champierre.github.io/glnmaps/binaries/aarch64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
 ```
 
-[x86_64-apple-darwin](https://champierre.github.io/binaries/x86_64-apple-darwin-glnmaps)
+[x86_64-apple-darwin](https://champierre.github.io/glnmaps/binaries/x86_64-apple-darwin-glnmaps)
 
 ```
-curl -L https://champierre.github.io/binaries/x86_64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
+curl -L https://champierre.github.io/glnmaps/binaries/x86_64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
 ```
 
-[x86_64-pc-windows-msvc](https://champierre.github.io/binaries/x86_64-pc-windows-msvc-glnmaps)
+[x86_64-pc-windows-msvc](https://champierre.github.io/glnmaps/binaries/x86_64-pc-windows-msvc-glnmaps)
 
 ```
-curl -L https://champierre.github.io/binaries/x86_64-pc-windows-msvc-glnmaps -o /usr/local/bin/glnmaps
+curl -L https://champierre.github.io/glnmaps/binaries/x86_64-pc-windows-msvc-glnmaps -o /usr/local/bin/glnmaps
 ```
 
-[x86_64-unknown-linux-gnu](https://champierre.github.io/binaries/x86_64-unknown-linux-gnu-glnmaps)
+[x86_64-unknown-linux-gnu](https://champierre.github.io/glnmaps/binaries/x86_64-unknown-linux-gnu-glnmaps)
 
 ```
-curl -L https://champierre.github.io/binaries/x86_64-unknown-linux-gnu-glnmaps -o /usr/local/bin/glnmaps
+curl -L https://champierre.github.io/glnmaps/binaries/x86_64-unknown-linux-gnu-glnmaps -o /usr/local/bin/glnmaps
 ```
 
 ### 2. 実行できるようにアクセス権を変更
