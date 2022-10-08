@@ -4,6 +4,10 @@ glnmaps(GeoLoNia Light and Neat Maps)は、各自治体が公開しているCSV�
 技術的な知識がなくても、誰でも簡単に使える平易なツールをめざしています。
 ソースは1個のHTMLファイルとしてダウンロードできるので、それをホスティングして公開することも簡単です。
 
+使用している[Geolonia Maps](https://docs.geolonia.com/)は、https://*.test 及び、http://127.0.0.1:<ポート番号> や http://localhost:<ポート番号> などのローカル環境で使用した場合や、GitHub Pages（https://*.github.io）上では無料で使用できるので、開発やオープンソースのプロジェクトで利用することができます。
+
+参考: [Geolonia Mapsの開発環境での利用について](https://docs.geolonia.com/tutorial/002/#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E5%88%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+
 ## 使い方
 
 ### 1. オープンデータとして公開されているCSVファイルを用意
@@ -26,8 +30,6 @@ dim install
 
 ### 2. glnmapsを使って地図に表示
 
-![glnmaps.gif](images/glnmaps.gif)
-
 ```
 glnmaps <CSVファイルのパス>
 ```
@@ -39,6 +41,16 @@ glnmaps is running. Access it at: http://localhost:3000/
 ```
 
 というメッセージが表示されたら、ブラウザを開き http://localhost:3000/ にアクセスしてください。
+
+![glnmaps.gif](images/glnmaps.gif)
+
+### 3. ソースをダウンロード
+
+「ソースをダウンロード」のリンクをクリックすると、ソースのファイル(index.html)をダウンロードすることができます。
+
+Chromeの拡張機能「[Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)」などを使い、ローカルのWebサーバーでアクセスできるようにしたり、ホスティングサーバーに配置して公開することもできます。
+
+![web_server_for_chrome.gif](images/web_server_for_chrome.gif)
 
 ## インストール
 
