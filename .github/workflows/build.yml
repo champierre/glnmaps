@@ -21,6 +21,7 @@ jobs:
           mkdir docs
           mv binaries docs/
           mv README.md docs/
+          mv images docs/
           mv _config.yml docs/
           mv sample.csv docs/
           mv dim.json docs/

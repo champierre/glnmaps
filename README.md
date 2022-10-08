@@ -26,6 +26,8 @@ dim install
 
 ### 2. glnmapsを使って地図に表示
 
+![glnmaps.gif](images/glnmaps.gif)
+
 ```
 glnmaps <CSVファイルのパス>
 ```
