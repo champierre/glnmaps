@@ -16,9 +16,9 @@ glnmaps(GeoLoNia Maps)は、各自治体が公開しているCSV形式のオー�
 
 サンプルとして東京都調布市が公開している公共施設のデータセットを用意しておきました。
 
-[東京都 調布市 公共施設 データセット](https://champierre.github.io/sample.csv)
+[東京都 調布市 公共施設 データセット](https://champierre.github.io/glnmaps/sample.csv)
 
-※ オープンデータを管理するには[dim](https://github.com/c-3lab/dim)を使うと便利です。サンプルの[dim.json](https://champierre.github.io/dim.json)をダウンロードして、
+※ オープンデータを管理するには[dim](https://github.com/c-3lab/dim)を使うと便利です。サンプルの[dim.json](https://champierre.github.io/glnmaps/dim.json)をダウンロードして、
 
 ```
 dim install
