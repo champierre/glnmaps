@@ -13,8 +13,8 @@ async function csv2geojson(_csvPath: string) {
 
   const features = [];
   for await (const row of readCSVObjects(f)) {
-    const lat = Number(row["緯度"] || row["緯度（10進法）"]);
-    const lng = Number(row["経度"] || row["経度（10進法）"]);
+    const lat = Number(row["緯度"] || row["緯度（10進法）"] || row["lat"] || row["latitude"]);
+    const lng = Number(row["経度"] || row["経度（10進法）"] || row["lng"] || row["longitude"] || row["lon"] || row["long"]);
     const data = {
       type: "Feature",
       geometry: {
@@ -22,8 +22,8 @@ async function csv2geojson(_csvPath: string) {
         coordinates: [lng, lat],
       },
       properties: {
-        title: row["名称"],
-        description: row["名称"],
+        title: row["名称"] || row["name"],
+        description: row["名称"] || row["name"],
       },
     };
     features.push(data);
