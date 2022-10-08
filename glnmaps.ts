@@ -37,7 +37,7 @@ async function csv2geojson(_csvPath: string) {
   return JSON.stringify(json);
 }
 
-function handler(req: Request): Promise<Response> {
+function handler(req: Request): Response {
   const url = new URL(req.url);
 
   if (url.pathname == "/") {
