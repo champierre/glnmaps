@@ -45,6 +45,14 @@ const index = `<!DOCTYPE html>
 
 const html = index.replace("{{geojson}}", geojson);
 
+function description(_row: any) {
+  let desc = "";
+  for (const key in _row) {
+    desc += `<strong>${key}:</strong> ${_row[key]}<br />`;
+  }
+  return desc;
+}
+
 async function csv2geojson(_csvPath: string) {
   const f = await Deno.open(_csvPath);
 
@@ -60,7 +68,7 @@ async function csv2geojson(_csvPath: string) {
       },
       properties: {
         title: row["名称"] || row["name"],
-        description: row["名称"] || row["name"],
+        description: description(row),
       },
     };
     features.push(data);
