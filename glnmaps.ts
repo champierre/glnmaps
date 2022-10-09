@@ -5,7 +5,8 @@ serve(handler, { port: 3000 });
 console.log("glnmaps is running. Access it at: http://localhost:3000/");
 const csvPath = Deno.args[0];
 const geojson = await csv2geojson(csvPath);
-const index = `<!DOCTYPE html>
+const downloadLink = '<p><a href="/download" download="index.html">ソースをダウンロード</a></p>';
+let index = `<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -27,7 +28,7 @@ const index = `<!DOCTYPE html>
     </style>
   </head>
   <body>
-    <p><a href="/download" download="index.html">ソースをダウンロード</a></p>
+    {{download-link}}
     <script id="geojson" type="application/json">
       {{geojson}}
     </script>
@@ -43,7 +44,7 @@ const index = `<!DOCTYPE html>
   </body>
 </html>`;
 
-const html = index.replace("{{geojson}}", geojson);
+index = index.replace("{{geojson}}", geojson);
 
 function description(_row: any) {
   let desc = "";
@@ -84,12 +85,15 @@ async function csv2geojson(_csvPath: string) {
 
 function handler(req: Request): Response {
   const url = new URL(req.url);
+  let html;
 
   if (url.pathname == "/") {
+    html = index.replace("{{download-link}}", downloadLink);
     return new Response(html, {
       headers: { "content-type": "text/html" },
     });
   } else if (url.pathname == "/download") {
+    html = index.replace("{{download-link}}", "");
     return new Response(html, {
       headers: { "content-type": "text/plain" },
     });
