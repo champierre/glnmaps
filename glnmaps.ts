@@ -1,9 +1,19 @@
 import { readCSVObjects } from "https://deno.land/x/csv/mod.ts";
 import { serve } from "https://deno.land/std@0.159.0/http/server.ts";
+import * as Colors from "https://deno.land/std@0.146.0/fmt/colors.ts";
+
+const csvPath = Deno.args[0];
+if (!csvPath) {
+  console.log(
+    Colors.red("glnmaps フォルダ/ファイル名.csv のようにCSVファイルのパスを指定してください。")
+  );
+  Deno.exit(1);
+}
 
 serve(handler, { port: 3000 });
-console.log("glnmaps is running. Access it at: http://localhost:3000/");
-const csvPath = Deno.args[0];
+console.log(Colors.green("glnmaps is running. Access it at: http://localhost:3000/"));
+Deno.run({ cmd: ["open", "http://localhost:3000"] })
+
 const geojson = await csv2geojson(csvPath);
 const index = await Deno.readTextFile("./index.html");
 const html = index.replace("{{geojson}}", geojson);
