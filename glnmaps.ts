@@ -81,6 +81,11 @@ function editPage(spotId, spotData) {
       input[type="text"] {
         width: 300px;
       }
+      .geolonia {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 300px;
+      }
     </style>
   </head>
   <body>
@@ -88,12 +93,48 @@ function editPage(spotId, spotData) {
       <table>`;
   let index = 0;
   for (const key in spotData) {
-    edit += `<tr><td><label for="${key}">${key}</label></td><td><input type="text" name="${key}" value="${spotData[key]}" /></td></tr>`;
+    let id = '';
+    if (key === "緯度" || key === "緯度（10進法）" || key === "lat" || key === "latitude") {
+      id = 'id="lat" ';
+    } else if (key === "経度" || key === "経度（10進法）" || key === "lng" || key === "longitude" || key === "lon" || key === "long") {
+      id = 'id="lng" ';
+    }
+    edit += `<tr><td><label for="${key}">${key}</label></td><td><input ${id}type="text" name="${key}" value="${spotData[key]}" /></td></tr>`;
     index++;
   }
+
+  const lat = spotData["緯度"] || spotData["緯度（10進法）"] || spotData["lat"] || spotData["latitude"];
+  const lng = spotData["経度"] || spotData["経度（10進法）"] || spotData["lng"] || spotData["longitude"] || spotData["lon"] || spotData["long"]
   edit += `
-        </table>
-      <input type="submit" value="更新" />
+      </table>
+
+      <div style="margin-top:10px">※ 緯度・経度を変更するには、マーカーをドラッグしてください。</div>
+      <div
+        id="map"
+        class="geolonia"
+        data-marker="off"
+        data-lat="${lat}"
+        data-lng="${lng}"
+        data-zoom="16"
+      ></div>
+
+      <script
+        type="text/javascript"
+        src="https://cdn.geolonia.com/v1/embed?geolonia-api-key=YOUR-API-KEY"
+      ></script>
+
+      <script>
+        const map = new geolonia.Map('#map')
+        const marker = new geolonia.Marker({draggable: true})
+            .setLngLat([${lng}, ${lat}])
+            .addTo(map);
+        function onDragEnd() {
+          document.getElementById('lat').value = marker.getLngLat().lat;
+          document.getElementById('lng').value = marker.getLngLat().lng;
+        }
+        marker.on('dragend', onDragEnd);
+      </script>
+      <input type="submit" value="更新" /> <a href="/">戻る</a>
     </form>
   </body>
 </html>`;
