@@ -1,11 +1,22 @@
 import { readCSVObjects } from "https://deno.land/x/csv/mod.ts";
 import { serve } from "https://deno.land/std@0.159.0/http/server.ts";
 import * as Colors from "https://deno.land/std@0.146.0/fmt/colors.ts";
+import { readAll } from "https://deno.land/std@0.117.0/streams/conversion.ts";
 
-const csvPath = Deno.args[0];
-if (!csvPath) {
+const filePath = Deno.args[0];
+if (!filePath) {
   console.log(
-    Colors.red("glnmaps フォルダ/ファイル名.csv のようにCSVファイルのパスを指定してください。")
+    Colors.red("glnmaps <フォルダ/ファイル名> のようにファイルのパスを指定してください。")
+  );
+  Deno.exit(1);
+} else if (!filePath.endsWith(".csv") && !filePath.endsWith(".geojson")) {
+  console.log(
+    Colors.red("CSVまたはGeoJSONファイルのパスを指定してください。")
+  );
+  Deno.exit(1);
+} else if (!await fileExists(filePath)) {
+  console.log(
+    Colors.red("指定したファイルが存在しません。")
   );
   Deno.exit(1);
 }
@@ -14,7 +25,15 @@ serve(handler, { port: 3000 });
 console.log(Colors.green("glnmaps is running. Access it at: http://localhost:3000/"));
 Deno.run({ cmd: ["open", "http://localhost:3000"] })
 
-const geojson = await csv2geojson(csvPath);
+let geojson;
+if (filePath.endsWith(".csv")) {
+  geojson = await csv2geojson(filePath);
+} else {
+  const file: Deno.File = await Deno.open(filePath);
+  const decoder: TextDecoder = new TextDecoder("utf-8");
+  geojson = decoder.decode(await readAll(file));
+}
+
 const downloadLink = '<p><a href="/download" download="index.html">ソースをダウンロード</a></p>';
 let index = `<!DOCTYPE html>
 <html lang="ja">
@@ -109,5 +128,14 @@ function handler(req: Request): Response {
     });
   } else {
     return new Response("Not Found", { status: 404 });
+  }
+}
+
+async function fileExists(filepath: string): Promise<boolean> {
+  try {
+    const file = await Deno.stat(filepath);
+    return file.isFile;
+  } catch (e) {
+    return false
   }
 }
