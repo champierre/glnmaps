@@ -64,6 +64,7 @@ let index = `<!DOCTYPE html>
     <div
       class="geolonia"
       data-geojson="#geojson"
+      data-geolocate-control="on"
     ></div>
 
     <script
