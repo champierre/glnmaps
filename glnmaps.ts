@@ -29,7 +29,7 @@ let geojson;
 if (filePath.endsWith(".csv")) {
   geojson = await csv2geojson(filePath);
 } else {
-  const file: Deno.File = await Deno.open(filePath);
+  const file: InstanceType<typeof Deno.File> = await Deno.open(filePath);
   const decoder: TextDecoder = new TextDecoder("utf-8");
   geojson = decoder.decode(await readAll(file));
 }
