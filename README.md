@@ -8,6 +8,40 @@ glnmaps(GeoLoNia Maps)は、各自治体が公開しているCSV形式のオー�
 
 参考: [Geolonia Mapsの開発環境での利用について](https://docs.geolonia.com/tutorial/002/#%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E5%88%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 
+## インストール
+
+### 1. glnmapsのバイナリをダウンロード
+
+[aarch64-apple-darwin](https://champierre.github.io/glnmaps/binaries/aarch64-apple-darwin-glnmaps)
+
+```
+curl -L https://champierre.github.io/glnmaps/binaries/aarch64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
+```
+
+[x86_64-apple-darwin](https://champierre.github.io/glnmaps/binaries/x86_64-apple-darwin-glnmaps)
+
+```
+curl -L https://champierre.github.io/glnmaps/binaries/x86_64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
+```
+
+[x86_64-pc-windows-msvc](https://champierre.github.io/glnmaps/binaries/x86_64-pc-windows-msvc-glnmaps)
+
+```
+curl -L https://champierre.github.io/glnmaps/binaries/x86_64-pc-windows-msvc-glnmaps -o /usr/local/bin/glnmaps
+```
+
+[x86_64-unknown-linux-gnu](https://champierre.github.io/glnmaps/binaries/x86_64-unknown-linux-gnu-glnmaps)
+
+```
+curl -L https://champierre.github.io/glnmaps/binaries/x86_64-unknown-linux-gnu-glnmaps -o /usr/local/bin/glnmaps
+```
+
+### 2. 実行できるようにアクセス権を変更
+
+```
+chmod a+x /usr/local/bin/glmaps
+```
+
 ## 使い方
 
 ### 1. オープンデータとして公開されているCSVファイルを用意
@@ -51,37 +85,3 @@ glnmaps is running. Access it at: http://localhost:3000/
 Chromeの拡張機能「[Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb)」などを使い、ローカルのWebサーバーでアクセスできるようにしたり、ホスティングサーバーに配置して公開することもできます。
 
 ![web_server_for_chrome.gif](images/web_server_for_chrome.gif)
-
-## インストール
-
-### 1. glnmapsのバイナリをダウンロード
-
-[aarch64-apple-darwin](https://champierre.github.io/glnmaps/binaries/aarch64-apple-darwin-glnmaps)
-
-```
-curl -L https://champierre.github.io/glnmaps/binaries/aarch64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
-```
-
-[x86_64-apple-darwin](https://champierre.github.io/glnmaps/binaries/x86_64-apple-darwin-glnmaps)
-
-```
-curl -L https://champierre.github.io/glnmaps/binaries/x86_64-apple-darwin-glnmaps -o /usr/local/bin/glnmaps
-```
-
-[x86_64-pc-windows-msvc](https://champierre.github.io/glnmaps/binaries/x86_64-pc-windows-msvc-glnmaps)
-
-```
-curl -L https://champierre.github.io/glnmaps/binaries/x86_64-pc-windows-msvc-glnmaps -o /usr/local/bin/glnmaps
-```
-
-[x86_64-unknown-linux-gnu](https://champierre.github.io/glnmaps/binaries/x86_64-unknown-linux-gnu-glnmaps)
-
-```
-curl -L https://champierre.github.io/glnmaps/binaries/x86_64-unknown-linux-gnu-glnmaps -o /usr/local/bin/glnmaps
-```
-
-### 2. 実行できるようにアクセス権を変更
-
-```
-chmod a+x /usr/local/bin/glmaps
-```
