@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.571106, 35.657854] },
+      "properties": {
+        "title": "つつじケ丘児童館",
+        "description": "<strong>NO:</strong> 0000000001<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> つつじケ丘児童館<br /><strong>名称(カナ):</strong> ツツジガオカジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820006<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 西つつじケ丘<br /><strong>住所丁目以下:</strong> 3-19-1<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 12月29日から1月3日は休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 甲州街道沿い、坂の途中にある児童館です。敷地内には、体を動かして遊べる庭があります。また、乳幼児向けの「子育てひろば」を実施していますので、安心して遊ぶことができます。季節ごとにつつじヶ丘児童館独自のイベントやプログラムも実施しています。 また、つつじヶ丘児童館学童クラブも併設されています。他の児童館にない施設として児童館ホールも隣接しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00495.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.657854<br /><strong>経度:</strong> 139.571106<br /><strong>電話番号:</strong> (042)482-6201<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.582985, 35.658196] },
+      "properties": {
+        "title": "東部児童館",
+        "description": "<strong>NO:</strong> 0000000002<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 東部児童館<br /><strong>名称(カナ):</strong> トウブジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820003<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 若葉町<br /><strong>住所丁目以下:</strong> 1-29-21<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 東部公民館、東部保育園と同じ建物の中にあります。子育て中の親子や、地域の子どもたちが自由に遊び、過ごすことができます。季節ごとに東部児童館独自のプログラムも実施しています。東部児童館学童クラブも併設させています。また、児童館の事業に差支えない範囲で、遊戯室と集会室を市内在住、在勤の方に貸し出してます。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00496.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.658196<br /><strong>経度:</strong> 139.582985<br /><strong>電話番号:</strong> (03)3307-6146<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.560591, 35.648614] },
+      "properties": {
+        "title": "国領児童館",
+        "description": "<strong>NO:</strong> 0000000003<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 国領児童館<br /><strong>名称(カナ):</strong> コクリョウジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820022<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 国領町<br /><strong>住所丁目以下:</strong> 3-8-15<br /><strong>建物名等:</strong> 4号棟<br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 都営くすのきアパート4号棟の1階部分にある児童館です。広いプレイルーム、落ち着いて本を読める図書室もあり、子育て中の親子や、地域の子どもたちが自由に遊び、過ごすことができます。季節ごとに国領児童館独自のイベントやプログラムも実施しています。 　国領児童館学童クラブも併設されています。また、児童館の事業に差支えない範囲で、遊戯室と学習室を市内在住、在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00497.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.648614<br /><strong>経度:</strong> 139.560591<br /><strong>電話番号:</strong> (042)485-8423<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.537707, 35.645387] },
+      "properties": {
+        "title": "多摩川児童館",
+        "description": "<strong>NO:</strong> 0000000004<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 多摩川児童館<br /><strong>名称(カナ):</strong> タマガワジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820025<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 多摩川<br /><strong>住所丁目以下:</strong> 5-1-2<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 京王多摩川駅からすぐのところにあり、電車の高架近くにある児童館。子育て中の親子や、地域の子どもたちが自由に遊んだり、過ごしたりできます。季節ごとに多摩川児童館独自のイベントやプログラムも実施しています。多摩川児童館学童クラブが併設されています。また、児童館の事業に差支えない範囲で、遊戯室と集会室を市内在住、在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00498.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.645387<br /><strong>経度:</strong> 139.537707<br /><strong>電話番号:</strong> (042)481-7680<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.555696, 35.672466] },
+      "properties": {
+        "title": "深大寺児童館",
+        "description": "<strong>NO:</strong> 0000000005<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 深大寺児童館<br /><strong>名称(カナ):</strong> ジンダイジジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820012<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 深大寺東町<br /><strong>住所丁目以下:</strong> 5-14-1<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 子育て中の親子や、地域の子どもたちが自由に遊び、過ごすことができます。乳幼児親子向けの子育てひろばをはじめ、深大寺児童館独自のイベントやプログラムも実施しています。深大寺児童館学童クラブも併設されています。また、児童館の事業に差支えない範囲で、遊戯室と集会室を市内在住、在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00499.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.672466<br /><strong>経度:</strong> 139.555696<br /><strong>電話番号:</strong> (042)488-7159<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.536626, 35.658318] },
+      "properties": {
+        "title": "富士見児童館",
+        "description": "<strong>NO:</strong> 0000000006<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 富士見児童館<br /><strong>名称(カナ):</strong> フジミジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820033<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 富士見町<br /><strong>住所丁目以下:</strong> 1-8-1<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:00<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 正面入り口は住宅街に面している、静かで落ち着いた環境の児童館です。子育て中の親子や、地域の子どもたちが自由に遊び、過ごすことができます。季節ごとに富士見児童館独自のイベントやプログラムも実施しています。富士見児童館学童クラブも併設されています。また、児童館の事業に差支えない範囲で、遊戯室と集会室を市内在住の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00500.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.658318<br /><strong>経度:</strong> 139.536626<br /><strong>電話番号:</strong> (042)481-7677<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.556182, 35.658671] },
+      "properties": {
+        "title": "佐須児童館",
+        "description": "<strong>NO:</strong> 0000000007<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 佐須児童館<br /><strong>名称(カナ):</strong> サズジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820016<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 佐須町<br /><strong>住所丁目以下:</strong> 4-42-2<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 佐須の閑静な住宅街の中にある児童館です。地域の乳幼児親子や子どもたちが自由に遊んだり、過ごしたりすることができます。また、季節ごとに佐須児童館独自のイベントやプログラムも実施。佐須児童館学童クラブが併設されています。佐須図書館、佐須ふれあいの家と同じ施設の中にあります。 児童館の事業に差支えない範囲で、プレイルームと集会室を市内在住、在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00501.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.658671<br /><strong>経度:</strong> 139.556182<br /><strong>電話番号:</strong> (042)481-0348<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.522147, 35.652905] },
+      "properties": {
+        "title": "西部児童館",
+        "description": "<strong>NO:</strong> 0000000008<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 西部児童館<br /><strong>名称(カナ):</strong> セイブジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820035<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 上石原<br /><strong>住所丁目以下:</strong> 3-21-6<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 西調布、飛田給エリアにある児童館です。地域の乳幼児親子や、子どもたちが自由に遊んだり過ごしたりすることができる施設です。広い庭や遊戯室があり、体を思い切り動かして遊ぶことができます。西部公民館と同じ建物の1F部分にあり、西部児童館学童クラブが併設されています。乳幼児親子向けの子育てひろばをはじめ、季節ごとに児童館独自のイベントやプログラムも実施されています。また、児童館の事業に差支えない範囲で、遊戯室と集会室を市内在住、在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00472.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.652905<br /><strong>経度:</strong> 139.522147<br /><strong>電話番号:</strong> (042)484-0313<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.584093, 35.669162] },
+      "properties": {
+        "title": "緑ケ丘児童館",
+        "description": "<strong>NO:</strong> 0000000009<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 緑ケ丘児童館<br /><strong>名称(カナ):</strong> ミドリガオカジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820001<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 緑ケ丘<br /><strong>住所丁目以下:</strong> 2-20-16<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 子どもたちが、健やかに情緒豊かに育ち、グループ活動や集団遊びなどを通して自主性、協調性、創造力を高め成長するよう支援しています。また、地域の方々の協力のもと地域ぐるみで事業に取り組んでいます。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00503.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.669162<br /><strong>経度:</strong> 139.584093<br /><strong>電話番号:</strong> (03)3309-0521<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.551324, 35.654949] },
+      "properties": {
+        "title": "調布ケ丘児童館",
+        "description": "<strong>NO:</strong> 0000000010<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 調布ケ丘児童館<br /><strong>名称(カナ):</strong> チョウフガオカジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820021<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 調布ヶ丘<br /><strong>住所丁目以下:</strong> 2-36-1<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:00<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> 子育て中の親子や、地域の子どもたちが自由に遊び、過ごすことができます。調布ヶ丘児童館学童クラブも併設されています。乳幼児親子向けの子育てひろばをはじめ、季節ごとに児童館独自のイベントやプログラムも実施されています。 　また、児童館の事業に支障のない範囲で、遊戯室と集会室を市内在住・在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00504.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.654949<br /><strong>経度:</strong> 139.551324<br /><strong>電話番号:</strong> (042)485-3101<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.555645, 35.642451] },
+      "properties": {
+        "title": "染地児童館",
+        "description": "<strong>NO:</strong> 0000000011<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 染地児童館<br /><strong>名称(カナ):</strong> ソメチジドウカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1403<br /><strong>郵便番号:</strong> 1820023<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 染地<br /><strong>住所丁目以下:</strong> 2-41-12<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 月火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 17:30<br /><strong>日時備考:</strong> 児童館は12月29日から1月3日が休館日。集会室等は12月28日から1月4日まで休館日。\n開始時刻: 9:00<br /><strong>説明:</strong> ガラス張りの外観とエントランスホールが広々とした児童館です。地域の乳幼児親子や、子どもたちが自由に遊んだり過ごしたりすることができます。染地児童館では、乳幼児親子向けの子育てひろばをはじめ、独自のイベントやプログラムも実施されています。2階には染地児童館学童クラブが併設されています。また、児童館の事業に差支えない範囲で、遊戯室と集会室を市内在住、在勤の方に貸し出しています。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://gakusyu.chofu-city.jp/_shisetsu/00505.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.642451<br /><strong>経度:</strong> 139.555645<br /><strong>電話番号:</strong> (042)485-3102<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.582985, 35.658196] },
+      "properties": {
+        "title": "東部公民館",
+        "description": "<strong>NO:</strong> 0000000012<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 東部公民館<br /><strong>名称(カナ):</strong> トウブコウミンカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1307<br /><strong>郵便番号:</strong> 1820003<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 若葉町<br /><strong>住所丁目以下:</strong> 1-29-21<br /><strong>建物名等:</strong> 2階<br /><strong>サービス曜日:</strong> 火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 21:30<br /><strong>日時備考:</strong> 毎週月曜日,年末年始(12月29日から1月3日)は休館日。その他施設の保守点検等のため臨時休館する場合があります。諸室は,9時から正午,午後1時から午後4時30分,午後5時30分から午後9時30分の利用時間帯に利用可能です。\n開始時刻: 9:00<br /><strong>説明:</strong> さまざまな学習や文化活動を行う生涯学習の場として、また生活文化を高め地域の連帯を深める事業を行う場として親しまれている社会教育施設です。<br /><strong>バリアフリー情報:</strong> 簡易型階段昇降車有り<br /><strong>URL:</strong> http://www.city.chofu.tokyo.jp/www/contents/1176118870995/index.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.658196<br /><strong>経度:</strong> 139.582985<br /><strong>電話番号:</strong> (03)3309-4505<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.522147, 35.652905] },
+      "properties": {
+        "title": "西部公民館",
+        "description": "<strong>NO:</strong> 0000000013<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 西部公民館<br /><strong>名称(カナ):</strong> セイブコウミンカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1307<br /><strong>郵便番号:</strong> 1820035<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 上石原<br /><strong>住所丁目以下:</strong> 3-21-6<br /><strong>建物名等:</strong> 2階<br /><strong>サービス曜日:</strong> 火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 21:30<br /><strong>日時備考:</strong> 毎週月曜日,年末年始(12月29日から1月3日)は休館日。諸室は,9時から正午,午後1時から午後4時30分,午後5時30分から午後9時30分の利用時間帯に利用可能です。\n開始時刻: 9:00<br /><strong>説明:</strong> さまざまな学習や文化活動を行う生涯学習の場として、また生活文化を高め地域の連帯を深める事業を行う場として親しまれている社会教育施設です。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://www.city.chofu.tokyo.jp/www/contents/1176118971960/index.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.652905<br /><strong>経度:</strong> 139.522147<br /><strong>電話番号:</strong> (042)484-2531<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.562729, 35.661579] },
+      "properties": {
+        "title": "北部公民館",
+        "description": "<strong>NO:</strong> 0000000014<br /><strong>都道府県コード又は市区町村コード:</strong> 132080<br /><strong>名称:</strong> 北部公民館<br /><strong>名称(カナ):</strong> ホクブコウミンカン<br /><strong>名称(英字):</strong> <br /><strong>名称(通称):</strong> <br /><strong>行政サービス拠点種別:</strong> 1307<br /><strong>郵便番号:</strong> 1820014<br /><strong>住所都道府県:</strong> 東京都<br /><strong>住所市区町村:</strong> 調布市<br /><strong>住所町名:</strong> 柴崎<br /><strong>住所丁目以下:</strong> 2-5-18<br /><strong>建物名等:</strong> <br /><strong>サービス曜日:</strong> 火水木金土日<br /><strong>開始時刻:</strong> 09:00<br /><strong>終了時刻:</strong> 21:30<br /><strong>日時備考:</strong> 毎週月曜日,年末年始(12月29日から1月3日)は休館日。館内整理のための臨時休館日があります。\n開始時刻: 9:00<br /><strong>説明:</strong> さまざまな学習や文化活動を行う生涯学習の場として、また生活文化を高め地域の連帯を深める事業を行う場として親しまれている社会教育施設です。<br /><strong>バリアフリー情報:</strong> <br /><strong>URL:</strong> http://www.city.chofu.tokyo.jp/www/contents/1176118972000/index.html<br /><strong>画像URL:</strong> <br /><strong>緯度:</strong> 35.661579<br /><strong>経度:</strong> 139.562729<br /><strong>電話番号:</strong> (042)488-2698<br /><strong>内線番号:</strong> <br /><strong>法人番号:</strong> <br /><strong>団体名:</strong> <br /><strong>備考:</strong> <br />"
+      }
+    }
+  ]
+}

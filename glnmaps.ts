@@ -1,38 +1,46 @@
 import { readCSVObjects } from "https://deno.land/x/csv/mod.ts";
 import { serve } from "https://deno.land/std@0.159.0/http/server.ts";
 import * as Colors from "https://deno.land/std@0.146.0/fmt/colors.ts";
+import { readLines } from 'https://deno.land/std/io/mod.ts'
 import { readAll } from "https://deno.land/std@0.117.0/streams/conversion.ts";
 
 const filePath = Deno.args[0];
-if (!filePath) {
-  console.log(
-    Colors.red("glnmaps <フォルダ/ファイル名> のようにファイルのパスを指定してください。")
-  );
-  Deno.exit(1);
-} else if (!filePath.endsWith(".csv") && !filePath.endsWith(".geojson")) {
-  console.log(
-    Colors.red("CSVまたはGeoJSONファイルのパスを指定してください。")
-  );
-  Deno.exit(1);
-} else if (!await fileExists(filePath)) {
-  console.log(
-    Colors.red("指定したファイルが存在しません。")
-  );
-  Deno.exit(1);
+let geojson = '';
+
+if (!Deno.isatty(Deno.stdin.rid)) {
+  for await (const line of readLines(Deno.stdin)) {
+    geojson += line
+  }
+} else {
+  if (!filePath) {
+    console.log(
+      Colors.red("glnmaps <フォルダ/ファイル名> のようにファイルのパスを指定してください。")
+    );
+    Deno.exit(1);
+  } else if (!filePath.endsWith(".csv") && !filePath.endsWith(".geojson")) {
+    console.log(
+      Colors.red("CSVまたはGeoJSONファイルのパスを指定してください。")
+    );
+    Deno.exit(1);
+  } else if (!await fileExists(filePath)) {
+    console.log(
+      Colors.red("指定したファイルが存在しません。")
+    );
+    Deno.exit(1);
+  }
+
+  if (filePath.endsWith(".csv")) {
+    geojson = await csv2geojson(filePath);
+  } else {
+    const file: InstanceType<typeof Deno.File> = await Deno.open(filePath);
+    const decoder: TextDecoder = new TextDecoder("utf-8");
+    geojson = decoder.decode(await readAll(file));
+  }
 }
 
 serve(handler, { port: 3000 });
 console.log(Colors.green("glnmaps is running. Access it at: http://localhost:3000/"));
 Deno.run({ cmd: ["open", "http://localhost:3000"] })
-
-let geojson;
-if (filePath.endsWith(".csv")) {
-  geojson = await csv2geojson(filePath);
-} else {
-  const file: InstanceType<typeof Deno.File> = await Deno.open(filePath);
-  const decoder: TextDecoder = new TextDecoder("utf-8");
-  geojson = decoder.decode(await readAll(file));
-}
 
 const downloadLink = '<p><a href="/download" download="index.html">ソースをダウンロード</a></p>';
 let index = `<!DOCTYPE html>
