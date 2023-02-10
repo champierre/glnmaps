@@ -6,10 +6,22 @@ import { readAll } from "https://deno.land/std@0.117.0/streams/conversion.ts";
 
 const filePath = Deno.args[0];
 let geojson = '';
+const features: any[] = [];
 
 if (!Deno.isatty(Deno.stdin.rid)) {
   for await (const line of readLines(Deno.stdin)) {
-    geojson += line
+    try {
+      const parsedLine = JSON.parse(line);
+      features.push(parsedLine);
+    } catch (e) {
+      geojson += line;
+    }
+  }
+  if (features.length > 0) {
+    geojson = JSON.stringify({
+      type: "FeatureCollection",
+      features,
+    });
   }
 } else {
   if (!filePath) {
